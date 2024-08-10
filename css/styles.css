@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1 , h2 , h3 {
+    font-family: "Work Sans", sans-serif;
+    color: rgb(11, 2, 35);
+}
+
+p, a , li{
+    font-family: "Work Sans", sans-serif;
+    color: rgb(83, 76, 100);
+
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.display{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+li{
+    list-style: none;
+
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.icon-1{
+    font-size: 40px;
+    color: white;
+    
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Header? */
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo , .footer-logo{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content:center;
+    align-items: center;
+    gap: 2%;
+  
+    p{
+        font-size: 45px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+}
+
+.g{
+    color:  rgb(255, 66, 165); 
+}
+
+.header-container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-content-li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    a::after {    
+        content: "";
+        display: block;
+        height: 4px;
+        background: rgb(112, 191, 211);
+        transition: 0.5s;
+        width: 0;
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+    }
+
+    a:hover::after { 
+        width: 100%; 
+        left: 0;
+    }
+}
+
+
+.header-content-logo{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    a:hover{
+        transition: .2s;
+        transform: scale(0.90);
+    }
+}
+
+
+
+/* .//////////////////////////////////////////// Goat  */
+
+
+.goat{
+    margin-top: 5%;
+}
+
+.goat-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+
+.goat-container-content{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(223.23deg, rgba(140, 87, 238, 0.03) 3.979%,rgba(241, 68, 174, 0.03) 100.54%);
+    display: flex;
+    justify-content: center;
+    padding: 10% 5% 10% 5% ;
+
+    h1{
+        font-size: 65px;
+        font-weight: 800;
+        color:  rgb(255, 66, 165); 
+        margin: 0;
+    }
+
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    P{  
+        font-weight: 500;
+        margin-top: 0;
+    }
+    
+}
+
+
+
+.goat-btn-1 , .goat-btn-2{
+    width: 50%;
+    height: 5em;
+    border-radius: 48px;
+    border: none;
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+   
+.goat-btn-1::before {
+    content: '';
+    width: 0;
+    height: 5em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(255, 66, 165) 0%,rgb(8, 94, 255) 100%);
+    transition: .6s ease;
+    display: block;
+    z-index: -1;
+}
+
+
+.goat-btn-1:hover{
+    letter-spacing: 3px;
+}
+.goat-btn-1:hover::before {
+    width: 27em;
+}
+
+.goat-btn-1:active{
+    letter-spacing: 0px;
+    transition: .2s;
+    transform: scale(0.93);
+}
+  
+
+
+.goat-btn-2{
+    background: rgb(78, 197, 247);
+}
+
+
+.goat-btn-2::before {
+    content: '';
+    width: 0;
+    height: 5em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(78, 197, 247) 0%,rgb(8, 33, 255) 100%);
+    transition: .6s ease;
+    display: block;
+    z-index: -1;
+}
+
+.goat-btn-2:hover{
+    letter-spacing: 3px;
+}
+.goat-btn-2:hover::before {
+    width: 27em;
+}
+
+.goat-btn-2:active{
+    letter-spacing: 0px;
+    transition: .2s;
+    transform: scale(0.93);
+    
+}
+  
+
+/* ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] Know More  */
+
+
+.know-more-container{
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    
+}
+
+.know-more-title{
+ 
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: lowercase;
+    }
+
+    .p{
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(83, 76, 100);
+    }
+}
+
+
+/* -------------------------- Funny Videos _________________________ */
+
+.funny-videos-container{
+    text-align: center;
+
+    h1{
+        font-size: 42px;
+        font-weight: 700;
+    }
+}
+
+.funny-videos-image{
+    display: grid;
+    gap: 20px;
+}
+
+.image-7{
+    position: relative;
+
+    img{
+        filter: brightness(50%);
+    }
+}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++ Horse card  */
+
+
+.horse{
+    margin-top: 10%;
+}
+
+.horse-container , .king-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horse-container-title , .king-container-title{
+    
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.horse-container-image , .king-container-image {
+    /* position: relative; */
+    background-image: url(../images/Rectangle\ 55.png);
+    background-repeat: no-repeat;
+}
+
+
+.king-container-image{
+    height: 100%;
+    position: relative;
+    background-image: url(../images/Rectangle\ 67.png);
+    background-repeat: no-repeat;
+}
+
+
+
+/* (((((((((((((((((((((((((           King -card           ))))))))))))))))))))))))) */
+
+.king{
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+
+
+/* <<<<>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<   Careers /....................  */
+
+
+.career{
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+    p{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.career-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-cont-content{
+    display: flex;
+}
+
+
+.career-cont-content-title{
+
+    h1{
+        font-size: 42px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }  
+}
+
+.career-cont-content-dis {
+    display: flex;
+
+    p{
+        font-size: 20px;
+    }
+    
+    ul{       
+        padding: 0;
+    }
+
+    li{ 
+        padding-bottom: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+}
+
+
+
+
+.career-btn{
+    width: 50%;
+    height: 4em;
+    border-radius: 48px;
+    border: none;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.career-btn:hover{
+    letter-spacing: 3px;
+}
+
+
+.career-btn:active{
+    letter-spacing: 0px;
+    transition: .2s;
+    transform: scale(0.93);  
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Games card  */
+
+
+.games{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
+}
+
+
+.games-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.games-content{
+    width: 243px;
+    height: 80px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:center;
+
+    p{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    img{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.arcade{
+    border: 2px solid rgb(255, 66, 165);
+}
+  
+
+/* '''''''''''''''''''''''             Footer container                        ''''''''''''''''''''''''' */
+
+
+
+.footer{
+    background: rgb(11, 2, 35);
+}
+
+.footer-logo{
+    p{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: auto;
+}
+
+.footer-dis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+    }
+
+    h1{
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+    }
+    
+}
+
+
+.footer-image{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-dis-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-copy{
+    p{
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+
+
+@media screen and (min-width:50px) {
+
+
+
+    .header{
+        flex-direction: column;
+    }
+
+    .header-container{
+        width: 100%;
+        flex-direction: column;
+        height: 15em;
+    }
+
+    .header-content{
+        padding: 0;
+        flex-direction: column;
+        height: inherit;
+        justify-content: center;
+    }
+
+    .header-content-li{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .header-content-logo{
+        width: 70%;
+    }
+    
+
+
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Goat  */
+
+
+    .goat-container{
+        flex-direction: column-reverse;
+    }
+
+    .goat-container-content{
+        
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10%;
+    
+    }
+
+    .goat-btn{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .goat-container-image{
+        width: 100%;
+     
+        img{
+            width: 100%;
+        }
+    }
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Know more card  */
+
+
+    .know-more-container{
+        flex-direction: column;
+
+    }
+
+    .know-more-title{
+        text-align: center;
+    }
+
+    
+
+    /* ./././....././././././././././././././. Funny videos */
+
+
+ 
+    .funny-videos{
+
+        h1{
+            font-size: 23px;
+        }
+    }
+
+    .funny-videos-image{
+        grid-template-columns: repeat(1, 1fr);
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .overlay{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        position: absolute;
+        top: 25%;
+        left: 2%;
+    }
+
+
+   
+   
+    /* ..................////.................///// Horse card  */
+
+
+
+
+    .horse-container , .king-container{
+        flex-direction: column;
+    }
+
+    .horse-container-title , .king-container-title {
+        text-align: center;
+    }
+
+    .horse-container-image , .king-container-image{
+        width: 100%;
+        height: 20em;
+        background-position: center;
+        background-size: 62%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img{
+            width: 40%;
+        }
+    }
+
+    .position{
+        width: auto;
+        height: auto;
+        position: relative;
+        top: 30%;
+    }
+
+
+   
+
+
+    /* ././././././././././././././././././././. King card  */
+
+     
+    .position-1{      
+        width: auto;
+        height: auto;
+        position: relative;
+        top: 30%;
+        text-align: right;
+    }
+
+
+   
+
+
+    /* =================================== Careers  */
+
+    .career-container{
+        flex-direction: column;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .career-cont-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .career-cont-content-title{
+        text-align: center;
+    }
+
+    .career-cont-content-dis{
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    
+    /* ppppppppppppppppppppppppppppppppp           Games -card  */
+
+
+
+    .games-container{
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+
+
+    /* lllllllllllllllllllllll     Footer  */
+
+
+    .footer{
+        height: auto;
+    }
+    
+    .footer-container{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+   
+    .footer-dis{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .footer-image{
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        a:hover{
+            transition: .2s;
+            transform: scale(0.90);
+        }
+    }
+
+  
+    .footer-copy{
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    
+    .funny-videos-image{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .position{
+        right: 3%;
+    }
+
+    .position-1{
+        left: 3%;
+    }
+    
+}
+
+@media screen and (min-width: 650px) {
+    
+
+    
+    .overlay{
+        top: 30%;
+    }
+
+
+    .horse-container-image , .king-container-image{
+        height: 25em;
+        background-size: contain;
+        img{
+            width: 60%;            
+        }
+    }
+
+    .position{
+        top: 37%;
+        right: 20%;
+    }
+    .position-1{
+        top: 37%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    .king{
+        margin-top: 15%;
+        margin-bottom:15% ;
+    }
+
+
+
+    .overlay{
+        top: 37%;
+    }
+    .position{
+        top: 37%;
+        right: 17%;
+    }
+    .position-1{
+        top: 37%;
+        left: 17%;
+    }
+}
+
+@media screen and (min-width:850px) {
+     
+    .overlay{
+        top: 40%;
+    }
+
+    .position{
+        right: 16%;
+    }
+    .position-1{
+        left: 16%;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .horse-container-image , .king-container-image{
+        height: 30em;
+
+        img{
+            width: 70%;
+        }
+    }
+    
+    .position{
+        right: 19%;
+    }
+    .position-1{
+        left: 19%;
+    }
+    .overlay{
+        top: 45%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .header{
+        flex-direction: row;
+    }
+    .header-logo{
+        justify-content: start;
+    }
+    .header-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-content-li{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .header-content-logo{
+        width: 40%;
+    }
+
+
+
+    .goat{
+        margin-top: 0;
+    }
+    .goat-container{
+        flex-direction: row;
+    }
+
+
+    .know-more-container{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        flex-direction: row;
+
+        img{
+            width: 60%;
+        }
+    }
+
+    .know-more-title{
+        text-align: right;
+    }
+
+    
+    .overlay{
+        top: 25%;
+    }
+
+
+
+
+    .horse-container {
+        flex-direction: row; 
+    }
+
+    .horse-container-title , .king-container-title{
+        text-align: right;
+    }
+
+    .king-container-title{
+        width: 100%;
+    }
+
+    .horse-container-image{
+        width: 55%;
+        background-position: right;
+    }
+
+    .king-container{
+        flex-direction: row-reverse;
+    }
+
+
+    .position{
+        right: 27%;
+    }
+    .position-1{
+        left: 27%;
+    }
+
+
+    .funny-videos-image{
+        grid-template-columns:repeat(4, 1fr);
+    }
+
+
+
+    .footer-logo{
+        width: auto;
+    }
+
+    .footer-dis{
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .footer-image{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .horse-container, .king-container{
+        justify-content: space-between;
+    }
+
+    .horse-container-image , .king-container-image{
+        justify-content: space-evenly;
+        height: 35em;
+        gap: 0;
+
+        img{
+            width: 80%;
+        }
+    }
+    
+    .position{
+        top: 36%;
+        right: 32%;
+    }
+    .position-1{
+        top: 36%;
+        left: 32%;
+    }
+
+    .career-container{
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 50px;
+
+        img{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .king-container , .horse-container{
+        justify-content: space-evenly;
+    }
+
+    .position{
+        right: 27%;
+    }
+    .position-1{
+        left: 35%;
+    }
+
+    .overlay{
+        top: 33%;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    
+    .horse-container-image , .horse-container-image{
+        height: 40em;
+
+        img{
+            width: 90%;
+        }
+    }
+
+    .position{
+        position: relative;
+        right: 35%;
+    }
+    .position-1{
+        left: 35%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    
+    .overlay{
+        top: 37%;
+    }
+    .position{
+        right: 30%;
+    }
+    
+    .position-1{
+        left: 35%;
+    }
+
+}
+
+@media screen and (min-width: 1700px) {
+    
+    .overlay{
+        top: 40%;
+    }
+
+    .position{
+        right: 25%;
+    }
+    
+    .position-1{
+        left: 35%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    
+
+    .position{
+        right: 20%;
+    }
+    
+    .position-1{
+        left: 35%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    
+     
+    .horse-container-image , .king-container-image{
+    
+        img{
+            width: 100%;
+        }
+    }
+
+    .position{
+        top: 38%;
+        right: 20%;
+    }
+    
+    .position-1{
+        top: 32%;
+        left: 40%;
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+ 
+ 
+    .horse-container-image , .king-container-image{
+        background-position: center;
+    }
+
+    .king-container-title , .horse-container-title{
+        width: 30%;
+    }
+    .position{
+        right: 25%;
+    }
+    
+    .position-1{
+        top: 38%;
+        left: 18%;
+    }
+}
