@@ -44,7 +44,9 @@ li{
     
 }
 
-
+body{
+   margin: 0;
+}
 
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Header? */
@@ -1028,6 +1030,11 @@ li{
         img{
             width: 50%;
         }
+    }
+
+    .footer-container{
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 }
 
